@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class DemoSpring {
     public static void main(String[] args) {
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("ClassPathResource:ioc.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:ioc.xml");
 
         Person p = (Person) ctx.getBean("jimi");
 
